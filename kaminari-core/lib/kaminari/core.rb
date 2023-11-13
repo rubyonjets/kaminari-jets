@@ -8,7 +8,7 @@ begin
   require 'rails'
 rescue LoadError
   #do nothing
-end
+end unless defined?(Jets)
 
 # load Kaminari components
 require 'kaminari/config'
@@ -21,4 +21,9 @@ require 'kaminari/models/array_extension'
 if defined? ::Rails::Railtie
   require 'kaminari/railtie'
   require 'kaminari/engine'
+end
+
+if defined? ::Jets::Turbine
+  require 'kaminari/jets/turbine'
+  require 'kaminari/jets/engine'
 end
