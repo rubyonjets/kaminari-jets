@@ -8,3 +8,10 @@ This gem simply makes kaminari compatible with Jets. It's a fork of [kaminari](h
 * There is a separate fork version from the kaminari version.
 * So the kaminari version is kept intact.
 * If kaminari accepts these changes to the main gem then this gem will be retired.
+
+## Publishing
+
+Example:
+
+    rake build
+    pkg/kaminari-jets-0.1.0.gem
