@@ -4,12 +4,15 @@ $:.push File.expand_path("../lib", __FILE__)
 require "kaminari/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = 'kaminari'
-  spec.version     = Kaminari::VERSION
-  spec.authors     = ['Akira Matsuda', 'Yuki Nishijima', 'Zachary Scott', 'Hiroshi Shibata']
-  spec.email       = ['ronnie@dio.jp']
+  spec.name        = 'kaminari-jets'
+  spec.version     = Kaminari::FORK_VERSION
+  spec.authors     = ['Tung Nguyen']
+  spec.email       = ['tongueroo@gmail.com']
+  # Keep original authors as comment. Give them credit but they're not maintaining this fork.
+  # spec.authors     = ['Akira Matsuda', 'Yuki Nishijima', 'Zachary Scott', 'Hiroshi Shibata']
+  # spec.email       = ['ronnie@dio.jp']
   spec.homepage    = 'https://github.com/kaminari/kaminari'
-  spec.summary     = 'A pagination engine plugin for Rails 4+ and other modern frameworks'
+  spec.summary     = 'A pagination engine plugin for Rails 4+ and other modern frameworks including Jets'
   spec.description = 'Kaminari is a Scope & Engine based, clean, powerful, agnostic, customizable and sophisticated paginator for Rails 4+'
   spec.license       = "MIT"
 
