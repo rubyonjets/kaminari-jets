@@ -5,11 +5,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'kaminari/core/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "kaminari-core"
-  spec.version       = Kaminari::Core::VERSION
-  spec.authors       = ["Akira Matsuda"]
-  spec.email         = ["ronnie@dio.jp"]
-
+  spec.name          = "kaminari-jets-core"
+  spec.version       = Kaminari::Core::FORK_VERSION
+  spec.authors     = ['Tung Nguyen']
+  spec.email       = ['tongueroo@gmail.com']
+  # Keep original authors as comment. Give them credit but they're not maintaining this fork.
+  # spec.authors       = ["Akira Matsuda"]
+  # spec.email         = ["ronnie@dio.jp"]
   spec.summary       = "Kaminari's core pagination library"
   spec.description   = 'kaminari-core includes pagination logic independent from ORMs and view libraries'
   spec.homepage      = 'https://github.com/kaminari/kaminari'

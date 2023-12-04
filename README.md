@@ -13,6 +13,9 @@ This gem simply makes kaminari compatible with Jets. It's a fork of [kaminari](h
 
 Example:
 
-    git tag v0.1.0
+    git tag v0.2.0
     rake build
-    pkg/kaminari-jets-0.1.0.gem
+    gem push pkg/kaminari-jets-0.2.0.gem
+    gem push kaminari-core/pkg/kaminari-jets-core-0.2.0.gem
+
+Note, we only push the gems that are needed for the fork to work.

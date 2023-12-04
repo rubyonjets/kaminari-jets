@@ -5,7 +5,7 @@ require "kaminari/version"
 
 Gem::Specification.new do |spec|
   spec.name        = 'kaminari-jets'
-  spec.version     = Kaminari::FORK_VERSION
+  spec.version     = Kaminari::FORK_VERSION # Kaminari::Core::FORK_VERSION not available here
   spec.authors     = ['Tung Nguyen']
   spec.email       = ['tongueroo@gmail.com']
   # Keep original authors as comment. Give them credit but they're not maintaining this fork.
@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.0.0'
 
   spec.add_dependency 'activesupport', '>= 4.1.0'
-  spec.add_dependency 'kaminari-core', Kaminari::VERSION
+  spec.add_dependency 'kaminari-jets-core', Kaminari::FORK_VERSION
   spec.add_dependency 'kaminari-actionview', Kaminari::VERSION
   spec.add_dependency 'kaminari-activerecord', Kaminari::VERSION
 
